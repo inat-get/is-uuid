@@ -58,7 +58,7 @@ class UUID
       end
     end
 
-    private :new
+    protected :new
 
     private
 
@@ -182,6 +182,10 @@ class UUID
 
   def inspect
     "\#<UUID:#{ version }:#{ variant }:#{ to_s }>".freeze
+  end
+
+  def as_json(*)
+    { uuid: to_s, version: version, variant: variant }
   end
 
   def urn

@@ -12,6 +12,7 @@ Gem::Specification::new do |s|
   s.required_ruby_version = "~> 3.4"
 
   s.add_development_dependency 'sequel', '~> 5.100'
+  s.add_development_dependency 'sqlite3'
   s.add_development_dependency "rspec", "~> 3.13"
   s.add_development_dependency "rake", "~> 13.3"
   s.add_development_dependency "simplecov", "~> 0.22.0"
